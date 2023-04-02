@@ -33,8 +33,9 @@ app.listen(5000, () => {
   console.log("server has started");
 });
 
-//using middlewares
+//using middlewares.
 app.use(express.static(path.join(path.resolve(), "public")));
+
 //setting up View engine
 app.set("view engine", "ejs");
 // app.get("/", (req, res) => {
