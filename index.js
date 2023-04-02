@@ -49,3 +49,4 @@ app.set("view engine", "ejs");
 // app.get("/gettext", (req, res) => {
 //   res.status(400).send("Merimerzi");
 // });
+//
