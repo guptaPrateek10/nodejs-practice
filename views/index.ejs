@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello EJS</h1>
+    <script src="myscript.js"></script>
+    <h1>Hello , Welcome TO EJS , My name is <%=locals.name%> </h1>
+    <!-- method is by default Get , but we can change it like below !  -->
+    <!-- Action is like routing , after submit it will route to contact route -->
+    <main>
+        <form method="post" action="/contact">
+            <h2>Contact form</h2>
+            <input type="text" name="name" placeholder="Enter Name" />
+            <input type="email" name="email" placeholder="Enter email" />
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
