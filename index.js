@@ -38,6 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //This is cookieparser middleware setup
 app.use(cookieparser());
+
 //setting up View engine
 app.set("view engine", "ejs");
 
