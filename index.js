@@ -3,6 +3,7 @@ import path from "path";
 import express from "express";
 import fs from "fs";
 import mongoose from "mongoose";
+import cookieparser from "cookie-parser";
 //it tells us the directopry name. path has some other methods as well.
 // console.log(path.dirname("/home/index,js"));
 
@@ -35,6 +36,8 @@ app.use(express.static(path.join(path.resolve(), "public")));
 //This is a by default middleware for POST and PUT req for sending the req.body to the server
 app.use(express.urlencoded({ extended: true }));
 
+//This is cookieparser middleware setup
+app.use(cookieparser());
 //setting up View engine
 app.set("view engine", "ejs");
 
